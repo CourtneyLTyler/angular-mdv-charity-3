@@ -1,1 +1,19 @@
-<p>charities works!</p>
+<mat-expansion-panel
+  *ngFor="let charity of charities"
+  #mapanel="matExpansionPanel"
+>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <h2>{{ charity.name }}</h2>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <h2>Location: {{ charity.location }}</h2>
+  <h2>Cause: {{ charity.cause }}</h2>
+  <h2>
+    Website: <a href="{{ charity.site }}">{{ charity.site }}</a>
+  </h2>
+  <h2>
+    Further information:
+    <a href="{{ charity.charityNavSite }}">{{ charity.charityNavSite }}</a>
+  </h2>
+</mat-expansion-panel>

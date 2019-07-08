@@ -1,6 +1,6 @@
-import { Charity } from "./chairty";
+import { Charity } from "./charity";
 
-export const CHARITY: Charity[] = [
+export const CHARITIES: Charity[] = [
   {
     name: "SOME (So Others Might Eat)",
     location: "Washington, DC",
